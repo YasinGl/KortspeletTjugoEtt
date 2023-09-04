@@ -13,3 +13,4 @@ def räkna_poang(hand):
         hand.append(1)
     return poang
 
+# test
