@@ -65,6 +65,6 @@ def tjugoett():
             print("Dealern vinner. Du kanske borde prova ett annat spel?")
     else:
         print("Vänligen svara JA/NEJ!?")
-        visa_hand()  # Om spelaren inte svarar "ja" eller "nej", starta om spelet.
+        tjugoett()  #  Om spelaren inte svarar "ja" eller "nej", starta om spelet.
 
 tjugoett()  #Kör spelet när programmet körs.
