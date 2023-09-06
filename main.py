@@ -10,7 +10,7 @@ def räkna_poang(hand):
 
 #Funktion för att visa en hand som en sträng.
 def visa_hand(hand):
-    kort = " ".join(map(str, hand))  #Skapar en sträng av korten i handen med mellanslag emellan.
+    kort = " : ".join(map(str, hand))  #Skapar en sträng av korten i handen med mellanslag emellan.
     return kort
 
 #Huvudfunktionen som implementerar spelet "Tjugoett" (Blackjack).
@@ -27,7 +27,7 @@ def tjugoett():
         dealer_hand = []   #Skapa en tom lista för dealerns hand.
 
         #Dela ut två kort till spelaren och två kort till dealern.
-        for _ in range(2):
+        for dela in range(2):
             spelare_hand.append(kortlek.pop())
             dealer_hand.append(kortlek.pop())
 
