@@ -1,17 +1,6 @@
 import random  #Importera random-modulen för att blanda kortleken.
-
-#Funktion för att räkna poäng i en hand.
-def räkna_poang(hand):
-    poang = sum(hand)  #Beräkna totala poängen i handen genom att summera värdena på korten.
-    if 14 in hand and poang > 21:  # Om det finns ett kort med värde 14 i handen och totalpoängen är över 21:
-        hand.remove(14)  #Ta bort kortet med värde 14 från handen.
-        hand.append(1)   #Lägg till ett kort med värde 1 istället.
-    return poang  #Returnera den beräknade poängen.
-
-#Funktion för att visa en hand som en sträng.
-def visa_hand(hand):
-    kort = " : ".join(map(str, hand))  #Skapar en sträng av korten i handen med mellanslag emellan.
-    return kort
+from rakna import *
+from kort2 import *
 
 #Huvudfunktionen som implementerar spelet "Tjugoett" (Blackjack).
 def tjugoett():
